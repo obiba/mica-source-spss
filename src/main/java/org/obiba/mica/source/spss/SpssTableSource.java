@@ -20,7 +20,7 @@ import org.obiba.magma.support.Initialisables;
 import org.obiba.mica.spi.source.AbstractStudyTableSource;
 import org.obiba.mica.spi.source.IVariable;
 import org.obiba.mica.spi.source.StudyTableFileSource;
-import org.obiba.mica.spi.source.StudyTableFileStream;
+import org.obiba.mica.spi.source.StudyTableFileStreamProvider;
 import org.obiba.mica.web.model.Mica;
 
 import javax.validation.constraints.NotNull;
@@ -45,7 +45,7 @@ public class SpssTableSource extends AbstractStudyTableSource implements StudyTa
 
   private SpssDatasource spssDatasource;
 
-  private StudyTableFileStream fileStream;
+  private StudyTableFileStreamProvider fileStreamProvider;
 
   private Path tmpdir;
 
@@ -78,8 +78,8 @@ public class SpssTableSource extends AbstractStudyTableSource implements StudyTa
   }
 
   @Override
-  public void initialise(StudyTableFileStream in) {
-    this.fileStream = in;
+  public void setStudyTableFileStreamProvider(StudyTableFileStreamProvider in) {
+    this.fileStreamProvider = in;
     // deferred init
     this.initialized = false;
   }
@@ -122,7 +122,7 @@ public class SpssTableSource extends AbstractStudyTableSource implements StudyTa
         tmpdir = Files.createTempDirectory(Paths.get(properties.getProperty("work.dir")), "");
         tmpdir.toFile().deleteOnExit();
         File targetFile = new File(tmpdir.toFile(), table + ".sav");
-        InputStream inputStream = fileStream.getInputStream();
+        InputStream inputStream = fileStreamProvider.getInputStream();
         Files.copy(inputStream, targetFile.toPath());
         IOUtils.closeQuietly(inputStream);
         spssDatasourceFactory.setFile(targetFile);
