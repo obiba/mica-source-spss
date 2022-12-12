@@ -44,7 +44,7 @@
       <scope>runtime</scope>
       <includes>
         <include>
-          org.obiba.mica:mica-source-spss:*
+          org.obiba.mica:mica-tables-spss:*
         </include>
         <include>
           org.obiba.magma:magma-datasource-spss:*

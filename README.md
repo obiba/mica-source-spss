@@ -1,9 +1,9 @@
-# Mica SPSS Plugin [![Build Status](https://app.travis-ci.com/obiba/mica-source-spss.svg?branch=master)](https://app.travis-ci.com/github/obiba/mica-source-spss)
+# Mica SPSS Plugin [![Build Status](https://app.travis-ci.com/obiba/mica-tables-spss.svg?branch=master)](https://app.travis-ci.com/github/obiba/mica-tables-spss)
 
 [Mica](https://github.com/obiba/mica2) is OBiBa’s core data web portal application for biobanks or epidemiological studies.
 
-* Have a bug or a question? Please create an issue on [GitHub](https://github.com/obiba/mica-source-spss/issues).
-* Continuous integration is on [Travis](https://travis-ci.org/obiba/mica-source-spss).
+* Have a bug or a question? Please create an issue on [GitHub](https://github.com/obiba/mica-tables-spss/issues).
+* Continuous integration is on [Travis](https://travis-ci.org/obiba/mica-tables-spss).
 
 ## Mailing list
 

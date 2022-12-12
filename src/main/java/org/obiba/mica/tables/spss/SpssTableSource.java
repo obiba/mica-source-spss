@@ -7,7 +7,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.obiba.mica.source.spss;
+package org.obiba.mica.tables.spss;
 
 import com.google.common.base.Strings;
 import org.apache.commons.io.IOUtils;
@@ -17,10 +17,10 @@ import org.obiba.magma.ValueTable;
 import org.obiba.magma.datasource.spss.SpssDatasource;
 import org.obiba.magma.datasource.spss.support.SpssDatasourceFactory;
 import org.obiba.magma.support.Initialisables;
-import org.obiba.mica.spi.source.AbstractStudyTableSource;
-import org.obiba.mica.spi.source.IVariable;
-import org.obiba.mica.spi.source.StudyTableFileSource;
-import org.obiba.mica.spi.source.StudyTableFileStreamProvider;
+import org.obiba.mica.spi.tables.AbstractStudyTableSource;
+import org.obiba.mica.spi.tables.IVariable;
+import org.obiba.mica.spi.tables.StudyTableFileSource;
+import org.obiba.mica.spi.tables.StudyTableFileStreamProvider;
 import org.obiba.mica.web.model.Mica;
 
 import javax.validation.constraints.NotNull;

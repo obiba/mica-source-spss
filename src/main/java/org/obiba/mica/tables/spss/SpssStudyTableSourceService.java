@@ -8,18 +8,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.obiba.mica.source.spss;
+package org.obiba.mica.tables.spss;
 
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
 import org.obiba.core.util.FileUtil;
-import org.obiba.mica.spi.source.AbstractStudyTableSourceService;
-import org.obiba.mica.spi.source.StudyTableSource;
+import org.obiba.mica.spi.tables.AbstractStudyTableSourceService;
+import org.obiba.mica.spi.tables.StudyTableSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -46,7 +45,7 @@ public class SpssStudyTableSourceService extends AbstractStudyTableSourceService
 
   @Override
   public String getName() {
-    return "mica-source-spss";
+    return "mica-tables-spss";
   }
 
   @Override

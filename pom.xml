@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.obiba.mica</groupId>
-  <artifactId>mica-source-spss</artifactId>
+  <artifactId>mica-tables-spss</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>mica-source-spss</name>
+  <name>mica-tables-spss</name>
   <url>http://obiba.org</url>
 
   <properties>
@@ -26,7 +26,7 @@
     <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
     <maven-surefire-plugin.version>2.16</maven-surefire-plugin.version>
 
-    <package.name>mica-source-spss-dist-${project.version}</package.name>
+    <package.name>mica-tables-spss-dist-${project.version}</package.name>
     <dist.location>${basedir}/target/${package.name}-dist/${package.name}</dist.location>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -256,20 +256,20 @@
   </repositories>
 
   <scm>
-    <connection>scm:git:https://github.com/obiba/mica-source-spss.git</connection>
-    <developerConnection>scm:git:https://github.com/obiba/mica-source-spss.git</developerConnection>
-    <url>https://github.com/obiba/mica-source-spss</url>
+    <connection>scm:git:https://github.com/obiba/mica-tables-spss.git</connection>
+    <developerConnection>scm:git:https://github.com/obiba/mica-tables-spss.git</developerConnection>
+    <url>https://github.com/obiba/mica-tables-spss</url>
     <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/obiba/mica-source-spss/issues</url>
+    <url>https://github.com/obiba/mica-tables-spss/issues</url>
   </issueManagement>
 
   <ciManagement>
     <system>Travis</system>
-    <url>https://travis-ci.org/obiba/mica-source-spss</url>
+    <url>https://travis-ci.org/obiba/mica-tables-spss</url>
   </ciManagement>
 
   <mailingLists>
