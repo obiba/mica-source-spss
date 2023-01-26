@@ -1,6 +1,9 @@
-# Mica SPSS Plugin [![Build Status](https://app.travis-ci.com/obiba/mica-tables-spss.svg?branch=master)](https://app.travis-ci.com/github/obiba/mica-tables-spss)
+# Mica Tables SPSS Plugin [![Build Status](https://app.travis-ci.com/obiba/mica-tables-spss.svg?branch=master)](https://app.travis-ci.com/github/obiba/mica-tables-spss)
 
 [Mica](https://github.com/obiba/mica2) is OBiBa’s core data web portal application for biobanks or epidemiological studies.
+
+Mica Tables SPSS is a plugin that reads data dictionaries from SPSS files. It does not provide statistical services such as
+basic summaries or contingency tables.
 
 * Have a bug or a question? Please create an issue on [GitHub](https://github.com/obiba/mica-tables-spss/issues).
 * Continuous integration is on [Travis](https://travis-ci.org/obiba/mica-tables-spss).
@@ -21,6 +24,7 @@ OBiBa software are open source and made available under the [GPL3 licence](http:
 
 If you are using OBiBa software, please cite our work in your code, websites, publications or reports.
 
-"The work presented herein was made possible using the OBiBa suite (www.obiba.org), a  software suite developed by Maelstrom Research (www.maelstrom-research.org)"
+"The work presented herein was made possible using the OBiBa suite (www.obiba.org), a  software suite developed by 
+Maelstrom Research (www.maelstrom-research.org) and Epigeny (www.epigeny.io)"
 
 Implementation of a Mica SPSS source plugin

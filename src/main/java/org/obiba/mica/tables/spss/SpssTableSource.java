@@ -85,11 +85,6 @@ public class SpssTableSource extends AbstractStudyTableSource implements StudyTa
   }
 
   @Override
-  public String getTable() {
-    return table;
-  }
-
-  @Override
   public ValueTable getValueTable() {
     ensureInitialized();
     return Strings.isNullOrEmpty(table) ? spssDatasource.getValueTables().stream().findFirst().get() : spssDatasource.getValueTable(table);
