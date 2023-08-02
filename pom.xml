@@ -3,7 +3,7 @@
   <groupId>org.obiba.mica</groupId>
   <artifactId>mica-tables-spss</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>mica-tables-spss</name>
   <url>http://obiba.org</url>
 
@@ -259,7 +259,7 @@
     <connection>scm:git:https://github.com/obiba/mica-tables-spss.git</connection>
     <developerConnection>scm:git:https://github.com/obiba/mica-tables-spss.git</developerConnection>
     <url>https://github.com/obiba/mica-tables-spss</url>
-    <tag>mica-tables-spss-1.0.x</tag>
+    <tag>1.0.0</tag>
   </scm>
 
   <issueManagement>
