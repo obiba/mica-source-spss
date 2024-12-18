@@ -54,6 +54,12 @@
       <groupId>org.obiba.mica</groupId>
       <artifactId>mica-spi</artifactId>
       <version>${mica.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.obiba.opal</groupId>
+          <artifactId>opal-core</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
