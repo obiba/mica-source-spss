@@ -10,7 +10,6 @@
 package org.obiba.mica.tables.spss;
 
 import com.google.common.base.Strings;
-import org.apache.commons.io.IOUtils;
 import org.obiba.core.util.FileUtil;
 import org.obiba.magma.Disposable;
 import org.obiba.magma.ValueTable;
@@ -113,13 +112,11 @@ public class SpssTableSource extends AbstractStudyTableSource implements StudyTa
       spssDatasourceFactory.setCharacterSet(properties.getProperty("charset", "ISO-8859-1"));
       spssDatasourceFactory.setLocale(properties.getProperty("locale", "en"));
       spssDatasourceFactory.setIdVariable(properties.getProperty("id_variable", ""));
-      try {
+      try (InputStream inputStream = fileStreamProvider.getInputStream()) {
         tmpdir = Files.createTempDirectory(Paths.get(properties.getProperty("work.dir")), "");
         tmpdir.toFile().deleteOnExit();
         File targetFile = new File(tmpdir.toFile(), table + ".sav");
-        InputStream inputStream = fileStreamProvider.getInputStream();
         Files.copy(inputStream, targetFile.toPath());
-        IOUtils.closeQuietly(inputStream);
         spssDatasourceFactory.setFile(targetFile);
       } catch (IOException e) {
         throw new RuntimeException(e);
